@@ -11,3 +11,32 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+ /* BASE */
+ a {
+  text-decoration: none;
+  color: #EEEEEE;
+}
+
+button {
+  height: 25px;
+  width: 102px;
+  border: 1px solid rgb(0,140,255);;
+  font-size: 14px;
+  border-radius: 18px;
+  color:black;
+  background-color: rgb(0,140,255);
+  margin: 2px;
+}
+
+button:hover {
+  background-color: black;
+  color: rgb(0,140,255);
+  border: 1px solid black;
+}
+
+.base-flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

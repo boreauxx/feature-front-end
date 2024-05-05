@@ -1,38 +1,283 @@
-.App {
+ /* NAVIGATION */
+ .header {
+   display: flex;
+   align-items: center;
+   height: 80px;
+   width: 100%;
+ }
+
+ .logo-cont {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   font-size: 24px;
+   font-weight: 600;
+   width: 240px;
+   height: 80px;
+   background-color: #31363F;
+ }
+
+ .logged-user,
+ .guest-user {
+   display: flex;
+   align-items: center;
+   width: 1680px;
+   height: 80px;
+   font-size: 24px;
+   background-color: #31363F;
+ }
+
+ .features {
+   display: flex;
+   align-items: center;
+   justify-content: space-around;
+   width: 1480px;
+   background-color: #31363F;
+ }
+
+ .profile {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   gap: 20px;
+   width: 200px;
+   background-color: #31363F;
+ }
+
+
+ /* LANDING */
+ .landing-div {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   min-height: calc(100vh - 80px);
+   font-size: 36px;
+   font-weight: 600;
+   text-decoration: none;
+   background-color: #404258;
+   color: white;
+ }
+
+
+ /* AUTHORIZATION */
+ .auth-div {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   min-height: calc(100vh - 80px);
+   background-color: #404258;
+ }
+
+ .auth-cont {
+   display: flex;
+   flex-direction: column;
+   justify-content: space-around;
+   align-items: center;
+   border: 1px solid black;
+   width: 440px;
+   height: 580px;
+   background-color: white;
+ }
+
+ .auth-form {
+   display: flex;
+   flex-direction: column;
+   gap: 12px;
+ }
+
+ .auth-form input {
+   height: 28px;
+   width: 250px;
+ }
+
+ /* HOME */
+ .home-div {
+   display: flex;
+   min-height: calc(100vh - 80px);
+   background-color: #404258;
+   margin: 0px;
+ }
+
+ .prog-form {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   height: 360px;
+   width: 440px;
+   font-size: 32px;
+   background-color: #50577A;
+ }
+
+ .prog-form input {
+   height: 32px;
+   font-size: 24px;
+   width: 210px;
+ }
+
+ .all-programs {
+   display: grid;
+   grid-template-columns: repeat(7, 1fr);
+   grid-template-rows: repeat(4, 1fr);
+   gap: 10px;
+   width: 1480px;
+   margin: 10px;
+ }
+
+ .program-ui {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   background-color: white;
+   border: 1px solid black;
+   padding: 4px;
+ }
+
+ /* PROGRAM */
+ .add-week-div {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 72px;
+   width: 100%;
+ }
+
+ .add-exercise-div {
+   width: 100%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   font-size: 24x;
+ }
+
+ .add-exercise-div input {
+   height: 25px;
+   width: 200px;
+   margin: 2px;
+ }
+
+ .add-ex-button {
+   height: 32px;
+   width: 160px;
+   font-size: 16px;
+   font-weight: 600;
+ }
+
+ .add-week-button {
+   height: 40px;
+   width: 172px;
+   font-size: 18px;
+   font-weight: 600;
+ }
+
+ .week-layout {
+   display: flex;
+   flex-direction: column;
+   justify-content: space-evenly;
+ }
+
+ .week-container {
+   display: flex;
+   flex-direction: column;
+   margin: 48px;
+   gap: 12px;
+   border: 1px solid black;
+   padding: 24px;
+   background-color: white;
+ }
+
+ .week-div {
+   display: flex;
+   justify-content: space-evenly;
+   gap: 12px;
+ }
+
+ .day-div {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   background-color: #50577A;
+   border: 1px solid black;
+   width: 236px;
+ }
+
+ .remove-week-button {
+   height: 48px;
+   width: 172px;
+   font-size: 18px;
+   font-weight: 600;
+ }
+
+ .day-stats {
+  font-size: 24px;
+  font-weight: 500;
   text-align: center;
-}
+ }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+ .single-day-ex {
+   display: flex;
+   flex-direction: column;
+   justify-content: space-around;
+   margin: 8px;
+   padding: 4px;
+   border: 1px solid white;
+ }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
+ .ex-name {
+   align-self: center;
+   font-size: 18px;
+   font-weight: 500;
+ }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
+ .remove-ex-button {
+   height: 40px;
+   align-self: flex-end;
+   font-size: 14px;
+   font-weight: 550;
+ }
 
-.App-link {
-  color: #61dafb;
-}
+ .show-details-button {
+  height: 48px;
+  width: 212px;
+  font-size: 18px;
+  font-weight: 600;
+ }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+ /* PROFILE */
+
+
+
+ /* CALCULATOR */
+ .item-cont {
+   display: flex;
+   background-color: grey;
+ }
+
+ .item-cont .all-items {
+   display: grid;
+   grid-template-columns: repeat(5, 1fr);
+   gap: 12px;
+   width: 80%;
+   margin: 12px;
+ }
+
+ .item-cont .add-item {
+   width: 20%;
+ }
+
+ .item-frame {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   font-size: 20px;
+   font-weight: 500;
+   border: 1px solid white;
+   height: 190px;
+   width: 290px;
+ }
+
+ .item-frame ul {
+   list-style: none;
+ }
